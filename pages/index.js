@@ -93,9 +93,16 @@ const index = () => {
             handleFetch()
         }
     }
+    const handleEventoPrincipio=()=>{
+        if(localStorage.getItem("pokemonesFavoritos")){
+            setPokemonesFavoritos(JSON.parse(localStorage.getItem("pokemonesFavoritos")))
+        }else{
+            setPokemonesFavoritos([])
+        }
+    }
     useEffect(() => {
         handleFetch()
-        setPokemonesFavoritos(JSON.parse(localStorage.getItem("pokemonesFavoritos")))
+        handleEventoPrincipio()
     }, [contador])
 
     return (
