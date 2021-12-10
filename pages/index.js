@@ -110,7 +110,7 @@ const index = () => {
 
         <header >
         <Head>
-          <title>PokeAPI</title>
+          <title>PokeAPI-Lautaro Beck</title>
           <meta charset="utf-8" />
           <link rel="icon" href="img/favicon-48x48.png" />
           <meta name="viewport" content="width=device-width, initial-scale=1" />
