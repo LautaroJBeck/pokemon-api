@@ -138,16 +138,20 @@ main h2{
   display:flex;
   justify-content: space-between;
   position: relative;
+  overflow:hidden;
+  
+
 }
 .img-pokemon{
   background-color:#3761a8;
   width:96px;
+  height:100%;
   position: relative;
   z-index: 20;
   transition: .5s;
 }
 .img-pokemon img{
-  display: block;
+
 }
 .div-oculto{
   display:flex;
@@ -169,10 +173,14 @@ main h2{
 }
 .span-oculto-stats{
   font-size: 14px;
-
 }
 .div-oculto span{
   text-transform: capitalize;
+}
+@keyframes animacion{
+  0%{
+
+  }
 }
 .img-pokemon:hover{
   opacity: 0;
